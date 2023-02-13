@@ -1,6 +1,7 @@
 import { Container, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import dots from "../assets/dots.png";
+import { userData } from "../utils.userData";
 
 export default function BoxComponent() {
   return (
@@ -34,9 +35,7 @@ export default function BoxComponent() {
           textAlign={"start"}
           sx={{ color: "white", mr: "0px" }}
         >
-          Sou estudante de programação na Kenzie Academy Brasil, participei de
-          diversos projetos resolvendo problemas de alto nível e desenvolvendo
-          habilidades
+          {userData.description}
         </Typography>
       </Container>
       <Container

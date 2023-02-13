@@ -31,6 +31,8 @@ interface IProject {
 export const userData = {
   name: "Wendel Bueres",
   image: avatar_img,
+  description:
+    "Sou Analista de Sistemas, Desenvolvedor de Sistemas e Estudante na Kenzie Academy, na Kenzie Academy participei de diversos projetos resolvendo problemas de alto nível e desenvolvendo habilidades, desenvolvi esses projetos por meio de diversas tecnologias, onde desenvolvi experiência em Back-end e Front-end.",
 };
 
 export const pages = [
