@@ -10,22 +10,8 @@ import Container from "@mui/material/Container";
 import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
-import avatar_img from "../assets/avatar_img.jpg";
-import github_img from "../assets/github.png";
-import linkedin_img from "../assets/linkedin.png";
-
-const pages = [
-  {
-    name: "GitHub",
-    link: "https://github.com/WendelBueres/",
-    image: github_img,
-  },
-  {
-    name: "Linked-In",
-    link: "https://linkedin.com/in/wendelbueres/",
-    image: linkedin_img,
-  },
-];
+import { userData } from "../utils.userData";
+import { pages } from "../utils.userData";
 
 export default function BarComponent() {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
@@ -45,7 +31,7 @@ export default function BarComponent() {
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Box sx={{ flexGrow: 1, display: "flex", alignItems: "center" }}>
-            <Avatar alt="Wendel Bueres" src={avatar_img} />
+            <Avatar alt="Wendel Bueres" src={userData.image} />
             <Typography
               variant="h1"
               fontSize="21px"
@@ -54,7 +40,7 @@ export default function BarComponent() {
               fontFamily={"IBM Plex Sans, sans-serif"}
               sx={{ ml: 2, cursor: "default", userSelect: "none" }}
             >
-              Wendel Bueres
+              {userData.name}
             </Typography>
           </Box>
           <Box sx={{ flexGrow: 0, display: { xs: "flex", md: "none" } }}>
