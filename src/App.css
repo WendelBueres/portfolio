@@ -32,7 +32,29 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+  background-color: #4a3e3e;
+  /* A altura só é vista quando a rolagem é horizontal */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  padding: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #7e9292;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: black transparent;
 }
