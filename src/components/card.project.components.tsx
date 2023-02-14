@@ -22,18 +22,18 @@ interface IProject {
 }
 
 export default function CardProjectComponent({ project }: IProject) {
-  const [width, setWidth] = useState<number>(window.screen.width);
+  const [width, setWidth] = useState<number>(
+    document.documentElement.clientWidth
+  );
 
   useEffect(() => {
     function refreshWidth() {
-      setWidth(window.screen.width);
+      setWidth(document.documentElement.clientWidth);
     }
-
-    console.log(width);
 
     window.addEventListener("resize", refreshWidth);
     return () => window.removeEventListener("resize", refreshWidth);
-  }, [window.screen.width]);
+  }, [document.documentElement.clientWidth]);
 
   let moreTechs: string = "";
   return (
@@ -60,7 +60,6 @@ export default function CardProjectComponent({ project }: IProject) {
         <Typography variant="body1">Linguagens: </Typography>
         {project.techs.map((tech: string, index: number) => {
           if (width > 500) {
-            console.log("mais 500");
             if (index < 3) {
               return <Chip key={tech} color="primary" label={tech} />;
             }
