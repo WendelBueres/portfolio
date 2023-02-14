@@ -26,12 +26,14 @@ export default function CardProjectComponent({ project }: IProject) {
 
   useEffect(() => {
     function refreshWidth() {
-      setWidth(window.innerWidth);
+      setWidth(window.screen.width);
     }
+
+    console.log(width);
 
     window.addEventListener("resize", refreshWidth);
     return () => window.removeEventListener("resize", refreshWidth);
-  }, [window.innerWidth]);
+  }, [window.screen.width]);
 
   let moreTechs: string = "";
   return (
@@ -58,6 +60,7 @@ export default function CardProjectComponent({ project }: IProject) {
         <Typography variant="body1">Linguagens: </Typography>
         {project.techs.map((tech: string, index: number) => {
           if (width > 500) {
+            console.log("mais 500");
             if (index < 3) {
               return <Chip key={tech} color="primary" label={tech} />;
             }
