@@ -63,7 +63,7 @@ export default function CardProjectComponent({ project }: IProject) {
             if (index < 3) {
               return <Chip key={tech} color="primary" label={tech} />;
             }
-            if (index === 3) {
+            if (index === 3 && index !== project.techs.length - 1) {
               moreTechs += `${tech}`;
             }
             if (index > 3 && index !== project.techs.length - 1) {
