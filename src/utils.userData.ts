@@ -99,6 +99,7 @@ export const projects: IProject[] = [
       "PostgreSQL",
       "Django REST Framework",
       "DRF Spectacular",
+      "Swagger-UI",
     ],
     description:
       "API para banco digital, com funcionalidade de criação de contas, cartões, lançamentos de compras, geração de faturas, operações bancárias em conta, criptografia de dados e investimento CDI com consumo de API externa da B3.",
