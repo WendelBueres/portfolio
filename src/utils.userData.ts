@@ -93,7 +93,13 @@ export const projects: IProject[] = [
   },
   {
     name: "Utopic Bank",
-    techs: ["Python", "Django", "Django REST Framework", "DRF Spectacular"],
+    techs: [
+      "Python",
+      "Django",
+      "PostgreSQL",
+      "Django REST Framework",
+      "DRF Spectacular",
+    ],
     description:
       "API para banco digital, com funcionalidade de criação de contas, cartões, lançamentos de compras, geração de faturas, operações bancarias em conta, criptografia de dados e investimento CDI com consumo de API externa da B3.",
     git_link: "https://github.com/Utopic-Digital-Bank/back-end",
