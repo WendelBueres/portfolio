@@ -124,7 +124,15 @@ export const projects: IProject[] = [
   },
   {
     name: "K-Contacts",
-    techs: ["React", "Material-UI", "TypeScript", "Prisma ORM", "PostgreSQL"],
+    techs: [
+      "React",
+      "Material-UI",
+      "TypeScript",
+      "Prisma ORM",
+      "ExpressJS",
+      "JEST",
+      "PostgreSQL",
+    ],
     description:
       "O K-Contacts tem como objetivo armazenar contatos do usuário e renderizar de modo amigável. O Back-end da aplicação armazena as informações em um banco de dados relacional usando o SGBD PostgreSQL.",
     git_link: "https://github.com/WendelBueres/entrega-5",
