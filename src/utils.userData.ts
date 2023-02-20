@@ -119,7 +119,7 @@ export const projects: IProject[] = [
       "PostgreSQL",
     ],
     description:
-      "O CNAB Reader tem como objetivo a leitura, interpretação e formatação de informações de arquivo CNAB. O Back-end da aplicação armazena as informações em um banco de dados relacional usando o SGBD PostgreSQL.",
+      "O CNAB Reader tem como objetivo a leitura, interpretação e formatação de informações de arquivos CNAB. O Back-end da aplicação armazena as informações em um banco de dados relacional usando o SGBD PostgreSQL.",
     git_link: "https://github.com/WendelBueres/desafio-2",
   },
   {
