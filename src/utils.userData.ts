@@ -71,11 +71,18 @@ export const lista = [
 
 export const projects: IProject[] = [
   {
+    name: "The Cost - API",
+    techs: ["Python", "Django", "Django REST Framework", "SQLite", "DRF - Spectacular"],
+    description:
+      "API para registro financeiros (receitas e gastos).",
+    git_link: "https://github.com/WendelBueres/TheCost-API/",
+  },
+  {
     name: "The Cost",
     techs: ["React", "TypeScript", "Styled-Components", "Json Web Tokens"],
     description:
       "Plataforma com o objetivo de ajudar o usuário a controlar gastos financeiros.",
-    git_link: "https://github.com/WendelBueres/the_cost",
+    git_link: "https://github.com/WendelBueres/the_cost/",
     link_deploy: "https://the-cost-rj53-9icpb69uk-wendelbueres.vercel.app/",
   },
   {
@@ -89,7 +96,7 @@ export const projects: IProject[] = [
       "Json Web Tokens",
     ],
     description: "API para solução de registro e divulgação de projetos.",
-    git_link: "https://github.com/WendelBueres/WorkCollection",
+    git_link: "https://github.com/WendelBueres/WorkCollection/",
   },
   {
     name: "Utopic Bank",
@@ -103,7 +110,7 @@ export const projects: IProject[] = [
     ],
     description:
       "API para banco digital, com funcionalidade de criação de contas, cartões, lançamentos de compras, geração de faturas, operações bancárias em conta, criptografia de dados e investimento CDI com consumo de API externa da B3.",
-    git_link: "https://github.com/Utopic-Digital-Bank/back-end",
+    git_link: "https://github.com/Utopic-Digital-Bank/back-end/",
     link_deploy: "https://utopic-bank.onrender.com/api/docs/",
   },
   {
@@ -120,7 +127,7 @@ export const projects: IProject[] = [
     ],
     description:
       "O CNAB Reader tem como objetivo a leitura, interpretação e formatação de informações de arquivos CNAB. O Back-end da aplicação armazena as informações em um banco de dados relacional usando o SGBD PostgreSQL.",
-    git_link: "https://github.com/WendelBueres/desafio-2",
+    git_link: "https://github.com/WendelBueres/desafio-2/",
   },
   {
     name: "K-Contacts",
@@ -135,6 +142,6 @@ export const projects: IProject[] = [
     ],
     description:
       "O K-Contacts tem como objetivo armazenar contatos do usuário e renderizar de modo amigável. O Back-end da aplicação armazena as informações em um banco de dados relacional usando o SGBD PostgreSQL.",
-    git_link: "https://github.com/WendelBueres/entrega-5",
+    git_link: "https://github.com/WendelBueres/entrega-5/",
   },
 ];
